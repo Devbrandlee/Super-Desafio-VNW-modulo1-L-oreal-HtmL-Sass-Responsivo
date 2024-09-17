@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efeef3;
+  font-family: "Kodchasan", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  overflow: hidden; //Quando ultrapassa ele ajusta...
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .bg-image { //imagem do background
+    
+    width: 100%;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    background-color: #efeef3;
+    //border: solid;
+    padding-bottom: 3px;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      margin-left: 10%;
+      position: absolute;
+
+      //logo foi pra cima e ao centro.
+    }
+  }
+
+  nav {
+    width: 85%;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+div {
+  //Cabeçalho - barra de navegação.
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  //padding: 10px 20px;
+}
+
+div img {
+  //Imagem do logo.
+  width: 12%;
+
+  @media (max-width: 700px) {
+    width: 35%;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 80vw;
+  justify-content: space-around;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    width: 100vw;
+
+    li {
+      margin-top: 18px;
+      margin-bottom: 15px; // Adicione espaço entre os itens da coluna na barra de navegação.
+      margin-right: 8rem;
+      text-align: center;
+    }
+  }
+}
+
+//Main
+
+.img-glycolic {
+  width: 60%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  @media (max-width: 700px) {
+    margin-left: 22%;
+    margin-top: 23rem;
+    width: 69%;
+  }
+}
+
+.glycolicgloss {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    width: 100%; // Ajusta a largura para não ultrapassar a tela.
+  }
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-weight: normal; //Peso da fonte
+    text-align: center;
+    //border: solid red;
+    padding-top: 30px;
+    margin-left: 1rem;
+  }
+  p {
+    font-weight: lighter;
+    text-align: center;
+    width: 485px;
+    padding-bottom: 30px;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .texto {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .texto h1 {
+    font-size: 1.5rem; /* Ajuste o tamanho do título */
+    margin-bottom: 2rem;
+  }
+
+  .texto p {
+    font-size: 1rem; /* Ajuste o tamanho do texto */
+    width: auto; /* Para permitir que o texto se ajuste melhor */
+  }
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 1px 0 0px;
+
+  justify-content: center; //Controla a posição dos produtos na tela.
+
+  div {
+    width: 41%; // Ajusta a largura do container das imagens.
+
+    img {
+      //border: solid red;
+      display: flex;
+      height: 25vh;
+      width: auto;
+    }
+  }
+
+  h3 {
+    font-weight: normal; //Peso da fonte
+    width: 28%;
+    //border: solid red;
+    margin-top: 1rem;
+    margin-right: 15rem;
+  }
+
+  // Media query para telas pequenas
+  @media (max-width: 700px) {
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      width: 100%; /* Ajusta o texto a 100% da largura */
+
+      margin-left: 8px; /* Remove o espaçamento extra */
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+
+    div {
+      // div dos produtos
+      display: flex;
+      flex-wrap: wrap;
+
+      width: 80%; /* Ajusta a largura do contêiner das imagens dos produtos*/
+
+      img {
+        width: 20%; /* Ajusta o tamanho das imagens para telas pequenas */
+        height: 35vh;
+        margin-top: 5%;
+        margin-bottom: 1%; /* Espaço entre as imagens */
+        margin: 0 0 0 110px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+//Rodapé 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-weight: normal;
+  }
+
+  img {
+    width: 2vw; // Tamanho padrão dos ícones em telas maiores.
+    padding-top: 20px;
+  }
+
+  .redesSociais:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  a {
+    margin: 0 60px; // Espaçamento entre os ícones.
+    padding-top: 10px;
+  }
+
+  // Media query para telas menores.
+  @media (max-width: 700px) {
+    img {
+      width: 4vw; // Aumenta o tamanho dos ícones em telas menores.
+    }
+
+    a {
+      margin: 0 1%; // Reduz o espaçamento entre os ícones.
+    }
+  }
+}

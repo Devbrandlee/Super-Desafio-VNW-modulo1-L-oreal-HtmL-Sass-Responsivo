@@ -84,7 +84,7 @@ ul {
     li {
       margin-top: 18px;
       margin-bottom: 15px; // Adicione espaço entre os itens da coluna na barra de navegação.
-      margin-right: 8rem;
+      margin-right: 4rem;
       text-align: center;
     }
   }
@@ -149,6 +149,7 @@ ul {
   .texto p {
     font-size: 1rem; /* Ajuste o tamanho do texto */
     width: auto; /* Para permitir que o texto se ajuste melhor */
+    margin-right: 29px;
   }
 }
 
@@ -179,7 +180,7 @@ ul {
   }
 
   // Media query para telas pequenas
-  @media (max-width: 700px) {
+  @media (max-width: 480px) {
     flex-direction: column;
 
     h3 {
@@ -196,15 +197,16 @@ ul {
       display: flex;
       flex-wrap: wrap;
 
-      width: 80%; /* Ajusta a largura do contêiner das imagens dos produtos*/
+      width: 100%; /* Ajusta a largura do contêiner das imagens dos produtos*/
 
       img {
-        width: 20%; /* Ajusta o tamanho das imagens para telas pequenas */
-        height: 35vh;
+        width: 18%; /* Ajusta o tamanho das imagens para telas pequenas */
+        height: 31vh;
         margin-top: 5%;
         margin-bottom: 1%; /* Espaço entre as imagens */
-        margin: 0 0 0 110px;
-        padding-left: 10px;
+        margin: 0 38px 0 31px;
+        padding-right: 1px;
+        //padding: 2px;
       }
     }
   }
@@ -245,6 +247,7 @@ footer {
 
     a {
       margin: 0 1%; // Reduz o espaçamento entre os ícones.
+      padding-left: 24px;
     }
   }
 }

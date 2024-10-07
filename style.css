@@ -181,11 +181,11 @@ ul {
     width: 100%; /* Ajusta a largura do contêiner das imagens dos produtos*/
   }
   .produtos div img {
-    width: 18%; /* Ajusta o tamanho das imagens para telas pequenas */
-    height: 31vh;
+    width: 15vw; /* Ajusta o tamanho das imagens para telas pequenas */
+    height: 29vh;
     margin-top: 5%;
     margin-bottom: 1%; /* Espaço entre as imagens */
-    margin: 0 38px 0 31px;
+    margin: 9px 49px 0 55px;
     padding-right: 1px;
   }
 }
